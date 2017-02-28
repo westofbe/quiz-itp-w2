@@ -29,7 +29,10 @@ def number_of_customers_per_state(customers):
     }
     """
     # Write your code here
-    pass
+    result = {}
+    for state, state_customers in customers.items():
+        result[state] = len(state_customers or [])
+    return result
 
 
 class NumberOfCustomersPerStateTestCase(unittest.TestCase):

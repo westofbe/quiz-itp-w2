@@ -39,7 +39,15 @@ def eldest_customer_per_state(customers):
     }
     """
     # Write your code here
-    pass
+    result = {}
+    for state, state_customers in customers.items():
+        eldest_customer = None
+        for customer in state_customers:
+            if eldest_customer is None or customer['age'] > eldest_customer['age']:
+                eldest_customer = customer
+        result[state] = eldest_customer
+
+    return result
 
 
 class EldestCustomerTestCase(unittest.TestCase):
