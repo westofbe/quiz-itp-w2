@@ -39,7 +39,9 @@ def eldest_customer_per_state(customers):
     }
     """
     # Write your code here
-    pass
+    mydict = {}
+    for age in customers:
+        return (max(value), state)
 
 
 class EldestCustomerTestCase(unittest.TestCase):

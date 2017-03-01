@@ -28,8 +28,10 @@ def number_of_customers_per_state(customers):
         'NY': 1
     }
     """
-    # Write your code here
-    pass
+    my_dict={}
+    for state in customers:
+      return len(state)
+
 
 
 class NumberOfCustomersPerStateTestCase(unittest.TestCase):
